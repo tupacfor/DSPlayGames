@@ -11,7 +11,12 @@
     <header>
         <nav class="header-container container">
             <div class="header-title">DSPlayGames</div>
-            <div class="header-image"><img src="/img/user.png" alt="perfil"></div>
+            <div class="profile">
+                <a href="#">Notícias</a>
+                <a href="#">Jogos</a>
+                <a href="#">Inscreva-se</a>
+                <div class="header-image"><img src="/img/user.png" alt="perfil"></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -40,79 +45,93 @@
                 <div class="saiba-mais">Carregar mais</div>
             </div>
         </section>
-
         <section id="games">
+            <h1>Jogos</h1>
             <div class="games-container container">
-                <h1>Jogos</h1>
                 <div class="games-card">
-                    <div class="games-image"><img src="/img/game.png" alt="Horizon Forbidden West"></div>
+                    <div class="games-image">
+                        <img src="/img/game.png" alt="Horizon Forbidden West">
+                    </div>
                     <h2>Horizon Forbidden West</h2>
-                    <p class="games-prodution"><span>De</span> Sony Interactive Entertainment</p>
-                    <p class="games-rate">9.7</p>
+                    <p class="games-description"><span>De</span> Sony Interactive Entertainment</p>
+                    <p class="games-nota">9.7</p>
                 </div>
 
                 <div class="games-card">
-                    <div class="games-image"><img src="/img/game.png" alt="Horizon Forbidden West"></div>
+                    <div class="games-image">
+                        <img src="/img/game.png" alt="Horizon Forbidden West">
+                    </div>
                     <h2>Horizon Forbidden West</h2>
-                    <p class="games-prodution"><span>De</span> Sony Interactive Entertainment</p>
-                    <p class="games-rate">9.7</p>
+                    <p class="games-description"><span>De</span> Sony Interactive Entertainment</p>
+                    <p class="games-nota">9.7</p>
                 </div>
 
                 <div class="games-card">
-                    <div class="games-image"><img src="/img/game.png" alt="Horizon Forbidden West"></div>
+                    <div class="games-image">
+                        <img src="/img/game.png" alt="Horizon Forbidden West">
+                    </div>
                     <h2>Horizon Forbidden West</h2>
-                    <p class="games-prodution"><span>De</span> Sony Interactive Entertainment</p>
-                    <p class="games-rate">9.7</p>
-                </div>
+                    <p class="games-description"><span>De</span> Sony Interactive Entertainment</p>
+                    <p class="games-nota">9.7</p>
+                </div>                
             </div>
         </section>
 
         <section id="enrollment">
-            <h1>Faça sua inscrição</h1>
-            <div class="enrollment-container container">
-                <form action="#" class="enrollment-form">
-                    <input type="text" placeholder="Nome completo">
-                    <input type="email" placeholder="Email">
+            <div class="container enrollment-container">
+                <h1 class="enrollment-title">Faça sua inscrição</h1>
+                <div class="enrollment-box">
+                    <div class="form-container">
+                        <form action="#" class="form-enrollment">
+                            <input type="text">
+                            <input type="email">
+                        </form>
+                        <form action="#" class="form-details">
+                            <p>Qual sua plataforma preferida?</p>
+                            <div>
+                                <input type="radio" id="pc" name="video-game">
+                                <label for="pc">PC</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Xbox" name="video-game">
+                                <label for="Xbox">Xbox</label>                                
+                            </div>
+                            <div>
+                                <input type="radio" name="video-game" id="Playstation">
+                                <label for="Playstation">Playstation</label>
+                            </div>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="">
+                                <label for="">Desejo receber novidades.</label>
+                            </div>
+                        </form>
                     
-                </form>
-                <p>Qual sua plataforma preferida?</p>
-                <form action="#">
-                    <div>
-                        <input type="radio" name="plataforma" id="PC">
-                        <label for="PC">PC</label>
                     </div>
-                    <div>
-                        <input type="radio" name="plataforma" id="Xbox">
-                        <label for="Xbox">Xbox</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="plataforma" id="Playstation">
-                        <label for="Playstation">Playstation</label>
-                    </div>
-                    <div class="check-news">
-                        <input type="checkbox" id="news">
-                        <label for="news">Desejo receber novidades.</label>
-                    </div>
-                </form>
-                
-                <div class="button-send">Enviar</div>
 
-                <div class="button-clear">Limpar</div>
+                    <div class="buttons">
+                        <div class="send buttons-area">Enviar</div>
+                        <div class="clear buttons-area">Limpar</div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="footer-container container">
+        <div class="footer-content">
             <div class="footer-links">
                 <a href="#">@dsplaygames</a>
                 <a href="#">/dsplaygames</a>
             </div>
-            <div class="footer-laws">
+            <div>
                 <p>DS Play Games Ltda. Todos direitos reservados</p>
             </div>
-            <div class="footer-terms">
+            
+            <div>
                 <p>Política de privacidade</p>
                 <p>Termos de uso</p>
-            </div>            
+            </div>
+
         </div>
     </footer>
 </body>

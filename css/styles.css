@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
-/* ELEMENTS */
+/* ELEMENTS  18 e 24*/
 
 * {
     font-family: 'poppins', sans-serif;
@@ -11,7 +11,7 @@
 }
 
 body, html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 header {
@@ -22,11 +22,16 @@ header {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* CLASSES E IDS */
 
 .container {
-    width: 100%;
-    max-width: calc(100% - 20px);
+    width: calc(100% - 20px);
+    max-width: 990px;
     margin: 0 auto;
 }
 
@@ -35,6 +40,17 @@ header {
     justify-content: space-between;
     align-items: center;
     
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile a {
+    margin-right: 19px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .header-image img {
@@ -66,7 +82,7 @@ header {
 
 .card-news h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.333rem;
     color: #797979;
     margin: 40px 0 8px 0;
 }
@@ -85,7 +101,7 @@ header {
 }
 
 .header-card-content h2 {
-    font-size: 1rem;
+    font-size: 0.667rem;
     color: #38AF90;
     font-weight: 700;
     margin-bottom: 3px;
@@ -93,7 +109,7 @@ header {
 }
 
 .header-card-content p {
-    font-size: 0,75rem;
+    font-size: 0.667rem;
     color: #797979;
     font-weight: 700;
 }
@@ -127,172 +143,231 @@ header {
     margin-bottom: 60px;
 }
 
-/* Games */
+/* GAMES */
 
 #games {
     background-color: #F0F0F0;
+    padding-top: 36px;
 }
 
-.games-container {
-    padding-top: 40px;
-    padding-bottom: 15px;
-    max-width: 300px;
-}
 
-.games-container h1 {
-    font-size: 1.5rem;
+#games h1 {
+    font-size: 1.333rem;
     color: #38AF90;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 28px;
-    
+    margin-bottom: 13px;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
 }
 
 .games-card {
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 300px;
     background-color: #fff;
-    margin-bottom: 27px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.games-image {
+    margin-bottom: 28px;
 }
 
 .games-image img {
     width: 100%;
-    max-width: 300px;
-    min-width: 300px;
-    height: 169px;
-    margin-bottom: 28px;
     border-radius: 8px;
+   
 }
 
 .games-card h2 {
     font-size: 18px;
-    color: #797979;
     font-weight: 700;
+    color: #797979;
+    text-align: center;
+
 }
 
-.games-prodution {
+.games-description {
+    color: #797979;
+    text-align: center;
     font-size: 14px;
-    color: #797979;
 }
 
-.games-prodution span {
-    font-weight: 700;
+.games-card span {
     color: #38AF90;
+    font-weight: 700;
 }
 
-.games-rate {
+.games-nota {
     font-size: 36px;
-    color: #38AF90;
     font-weight: 700;
+    color: #38AF90;
+    text-align: center;
+    margin: 15px 0;
 }
 
-/* ENROLLMENT */
+/* SUBSCRIPTION */
 
 .enrollment-container {
-    max-width: 17.5rem;
-    background-color: #F0F0F0;
-    padding: 52px 8px 33px 8px;
-    border-radius: 8px;
-    color: #797979;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#enrollment h1 {
-    font-size: 1.5rem;
-    color: #797979;
-    font-weight: 700;
+.enrollment-title {
     text-align: center;
+    font-size: 1.333rem;
+    font-weight: 700;
+    color: #797979;
     margin: 40px 0 16px 0;
 }
 
-.enrollment-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.enrollment-form input {
+.enrollment-box {
+    background-color: #F0F0F0;
     width: 100%;
-    max-width: 17.5rem;
-    height: 50px;
-    border: 1px solid #797979;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 52px 0 33px 0;
+    max-width: 790px;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    max-width: 642px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 
-.enrollment-form input::placeholder {
-   padding: 13px 0 13px 22px;
+.form-container form {
+    width: calc(100% - 20px);
 }
 
-.check-news {
+.form-enrollment input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+
+.form-details input {
+    width: 23px;
+}
+
+.form-details p {
+    font-size: 16px;
+    color: #797979;
+}
+
+.form-details label {
+    font-size: 16px;
+    color: #797979;
+}
+
+.form-checkbox {
     margin-top: 35px;
-
 }
 
-.button-send {
-    padding: 20px 94px;
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.send {
     background-color: #DD7E92;
     color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    margin: 47px 22px 20px 22px;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.button-clear {
-    padding: 20px 94px;
+.clear {
     background-color: #fff;
     color: #DD7E92;
-    border-radius: 8px;
-    text-align: center;
-    margin: 20px 22px 20px 22px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #DD7E92;
-    font-size: 18px;
-    font-weight: 700;
+    border: 2px solid #DD7E92;
 }
 
-/* FOOTER*/
+.buttons-area {
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+/* FOOTER */
 
 footer {
     background-color: #383838;
+}
+
+.footer-content {
+    min-height: 190px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin: 37px 0;
+    text-align: center;
     color: #fff;
     font-size: 14px;
+
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.footer-links a{
+    display: block;
 }
 
-.footer-links {
-    margin: 28px 106px 38px 106px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media(max-width: 767px) {
+    
+    .profile a {
+        display: none;
+        visibility: hidden;
+    }
 }
 
-.footer-links a {
-    text-decoration: none;
-    margin-top: 30px;
-    color: #fff;
+@media(max-width: 679px) {
+    .games-card {
+        width: 100%;
+        max-width: 679;
+    }
+
 }
 
-.footer-laws {
-    width: 250px;
-    margin-bottom: 37px;
-}
+@media(min-width: 768px) {
 
-.footer-terms {
-    margin-bottom: 37px;
-}
+    html, body {
+        font-size: 24px;
+    }
 
-@media(min-width: 1200px)
+    .card-news h1 {
+        margin: 40px 0 40px 0;
+    }
+
+    #games h1 {
+        margin-bottom: 60px;
+    }
+
+    .enrollment-title {
+        margin: 40px 0 40px 0;
+    }
+
+    .enrollment-box {
+        margin-bottom: 61px;
+    }
+
+}
